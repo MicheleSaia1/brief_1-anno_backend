@@ -42,7 +42,3 @@ def update(session, car):
 
 
 
-#PUT
-def update(session,):
-    session.commit()
-    return 
