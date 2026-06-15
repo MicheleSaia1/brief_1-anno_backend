@@ -28,9 +28,9 @@ def create(session, data: dict) -> Engine:
     new_engine = Engine(
         brand_engine=data['brand_engine'],
         price=data['price'],
-        horsepower=data.get('horsepower'),       # opzionale
-        displacement_cc=data.get('displacement_cc'),  # opzionale
-        production_year=data.get('production_year')   # opzionale
+        horsepower=data.get('horsepower'),      
+        displacement_cc=data.get('displacement_cc'),  
+        production_year=data.get('production_year')   
     )
 
     return engine_repository.create(session, new_engine)
